@@ -3,11 +3,9 @@
   <groupId>com.github.chrisbanes.photoview</groupId>
   <artifactId>library</artifactId>
   <versioning>
-    <release>1.2.2</release>
     <versions>
-      <version>1.2.2</version>
       <version>1.2.3-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20131110123535</lastUpdated>
+    <lastUpdated>20140325214712</lastUpdated>
   </versioning>
 </metadata>
