@@ -15,6 +15,7 @@
  *******************************************************************************/
 package uk.co.senab.photoview;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Build.VERSION;
@@ -22,6 +23,7 @@ import android.os.Build.VERSION_CODES;
 import android.view.MotionEvent;
 import android.view.View;
 
+@SuppressLint("NewApi")
 public class Compat {
 
     private static final int SIXTY_FPS_INTERVAL = 1000 / 60;

@@ -1,5 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<uk.co.senab.photoview.sample.HackyViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@android:drawable/ic_menu_revert" />
+        
+        <TextView 
+            android:id="@+id/top_page_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="3/4"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+        
+    </RelativeLayout>
+
+<uk.co.senab.photoview.sample.HackyViewPager 
     android:id="@+id/view_pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent" />
+
+	<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+		
+	    <TextView 
+	        android:id="@+id/image_text"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="asdadasdasdasdasdasdasdasdasdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+	        android:textColor="#ffffff"
+	        android:textSize="16sp"
+	        android:gravity="center"
+	        />
+	    
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        >
+	        
+	        <View 
+				android:id="@+id/invisible_center"
+				android:layout_width="1dp"
+				android:layout_height="1dp"
+				android:visibility="invisible"
+				android:layout_centerInParent="true"
+	            />
+	    
+	        <ImageView
+	            android:id="@+id/left_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="30dp"
+	            android:layout_toLeftOf="@id/invisible_center"
+	            android:layout_marginRight="15dp"
+	            android:layout_centerVertical="true"
+	            android:src="@android:drawable/ic_menu_revert" />
+	        
+	        <ImageView
+	            android:id="@+id/right_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="30dp"
+	            android:layout_toRightOf="@id/invisible_center"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="15dp"
+	            android:src="@android:drawable/ic_menu_revert" />
+        
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>
